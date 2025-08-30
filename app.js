@@ -27,7 +27,7 @@ app.use("/api/bookings", bookingsRouter);
 app.use(errorHandler);
 
 // db sync
-sequelize.sync().then(() => console.log("✅ MySQL DB synced"));
+sequelize.sync().then(() => console.log(" MySQL DB synced"));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
